@@ -15,7 +15,7 @@ You can test it by using the `api.http` file and the vscode extension `humao.res
 
 ```shell
 git clone https://github.com/rivasjoaquin02/school-pila
-cd school-pila
+cd school-pila/api-pila-node
 
 # install dependencies
 pnpm install
