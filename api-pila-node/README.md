@@ -47,7 +47,7 @@ docker pull postgres:latest
 
 -   **set the password**
 -   **set the port**
-    This is important because it has to be on the env variables
+This is important because it has to be on the env variables
 -   `POSTGRES_USER`
 -   `POSTGRES_PASSWORD`
 -   `POSTGRES_DB`
