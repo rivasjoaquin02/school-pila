@@ -1,0 +1,49 @@
+### recover all the articles
+GET http://localhost:3000/article
+
+### recover a article by id
+GET http://localhost:3000/article/95c94c68-e7ec-4eac-b8b4-af88d7309593
+
+### recover all article by name
+GET http://localhost:3000/article?name=iphone
+
+### recover all article by line
+GET http://localhost:3000/article?line=macbook
+
+### recover all article by brand
+GET http://localhost:3000/article?brand=apple
+
+### recover all article by name, line, brand
+GET http://localhost:3000/article?name=air&line=macbook&brand=apple
+
+### create a article
+POST http://localhost:3000/article
+Content-Type: application/json
+
+{
+  "name": "iPad 2024",
+  "line": "IPad",
+  "brand": "Apple"
+}
+
+### create a article that already exist
+POST http://localhost:3000/article
+Content-Type: application/json
+
+{
+  "name": "iPhone 14",
+  "line": "Iphone",
+  "brand": "Apple"
+}
+
+### update a article info
+PATCH http://localhost:3000/article/95c94c68-e7ec-4eac-b8b4-af88d7309593
+Content-Type: application/json
+
+{
+  "name": "Macbook Pro"
+}
+
+### delete a article
+DELETE http://localhost:3000/article/95c94c68-e7ec-4eac-b8b4-af88d7309593
+

@@ -1,0 +1,9 @@
+**/env
+**/__pycache__
+
+# js
+**/node_modules
+pnpm-lock.yaml
+node-lock.yaml
+yarn-lock.yaml
+bun-lock.yaml
