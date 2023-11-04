@@ -15,7 +15,7 @@ You can test it by using the `api.http` file and the vscode extension `humao.res
 
 ```shell
 git clone https://github.com/rivasjoaquin02/school-pila
-cd school-pila
+cd school-pila/api-pila-node
 
 # install dependencies
 pnpm install
@@ -30,7 +30,7 @@ The Recipe for building the DB is in the `articles.db` file
 
 ### External Website
 
-If you use an external website you have to create the env variable
+If you use an external website like PlanetScale or Neon you have to create the env variable
 
 -   `POSTGRES_URI`: "postgres:/..."
 
@@ -47,7 +47,9 @@ docker pull postgres:latest
 
 -   **set the password**
 -   **set the port**
-    This is important because it has to be on the env variables
+
+This is important because it has to be on the env variables
+
 -   `POSTGRES_USER`
 -   `POSTGRES_PASSWORD`
 -   `POSTGRES_DB`
