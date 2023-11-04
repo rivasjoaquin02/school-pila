@@ -1,14 +1,14 @@
 import postgres from "postgres";
 
 const DEFAULT_CONFIG = {
-	host: "localhost",
+	host: process.env.POSTGRES_HOST ?? "localhost",
 	user: process.env.POSTGRES_USER ?? "postgres",
 	password: process.env.POSTGRES_PASSWORD ?? "1234",
-	database: process.env.POSTGRES_DB ?? "articlesdb",
+	database: process.env.POSTGRES_DATABASE ?? "articlesdb",
 	port: process.env.POSTGRES_PORT ?? 5432,
 };
 
-const sql = postgres(process.env.POSTGRES_URI ?? DEFAULT_CONFIG);
+const sql = postgres(process.env.POSTGRES_URL ?? DEFAULT_CONFIG);
 
 export class ArticleModel {
 	static async getAll({ name, line, brand }) {

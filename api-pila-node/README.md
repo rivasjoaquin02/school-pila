@@ -32,7 +32,7 @@ The Recipe for building the DB is in the `articles.db` file
 
 If you use an external website like PlanetScale or Neon you have to create the env variable
 
--   `POSTGRES_URI`: "postgres:/..."
+-   `POSTGRES_URL`: "postgres:/..."
 
 ### DOCKER
 
